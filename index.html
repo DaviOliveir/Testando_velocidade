@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <input type="number" name="velo" id="velo">
+    <input type="button" value="enviar" onclick="enviar( )">
+    <div id="res"> Detector</div>
+    <div id="men"></div>
+
+    <script>
+
+        function enviar(){
+            let ve = window.document.getElementById('velo')
+            let res = window.document.getElementById('res')
+            let men = window.document.getElementById('men')
+            let vel = Number(ve.value)
+            
+
+                if(vel>100){
+                    res.innerHTML = `Está dirigindo muito rápido "Multado!" por favor redeusa a velocidade para sua seugurança e dos demais`
+                }
+                else{
+
+                    res.innerHTML = `Está otimo constinue digirindo assim `
+                }
+
+                    res.innerHTML += `e lembrese use o cinto de segurança!`
+    
+        }
+    </script>
+    
+</body>
+</html>
